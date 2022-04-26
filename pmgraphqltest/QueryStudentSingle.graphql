@@ -1,0 +1,18 @@
+query QueryStudentSingle($studentId: ID!) {
+  student(id: $studentId) {
+    id
+    nickname
+    year
+    activeSection
+    hadActiveSections
+    hasRegisteredParent
+    parents
+    favoriteGames {
+      id
+      name
+      playersPerMonth
+      rating
+      url
+    }
+  }
+}

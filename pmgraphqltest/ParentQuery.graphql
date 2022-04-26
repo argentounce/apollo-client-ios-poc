@@ -1,0 +1,12 @@
+query Parent($parentId: ID!) {
+  parent(id: $parentId) {
+    id
+    creditCard {
+      expirationDate
+      number
+      name
+    }
+    hasRegisteredStudents
+    students
+  }
+}

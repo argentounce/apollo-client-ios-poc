@@ -1,0 +1,18 @@
+query QueryStudents {
+  students {
+    id
+    nickname
+    year
+    activeSection
+    hadActiveSections
+    hasRegisteredParent
+    parents
+    favoriteGames {
+      id
+      name
+      playersPerMonth
+      rating
+      url
+    }
+  }
+}

@@ -1,0 +1,12 @@
+query Parents {
+  parents {
+    id
+    creditCard {
+      expirationDate
+      number
+      name
+    }
+    hasRegisteredStudents
+    students
+  }
+}
